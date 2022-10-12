@@ -15,7 +15,6 @@ class Billplz {
 
     if (this._options.sandbox === true) {
       this._apiEndpoint = this._sandboxApiEndpoint;
-      console.log(`Sandbox Mode On ${this._options.sandbox}`);
     }
 
     this._authentication = `Basic ${Buffer.from(this._apiKey).toString("base64")}`; 
